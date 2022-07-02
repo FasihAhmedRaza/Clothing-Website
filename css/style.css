@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -10,6 +12,8 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
+    /* position: absolute; */
 }
 nav{
     flex :1;
@@ -35,6 +39,7 @@ p{
     margin:auto;
     padding-left: 25px;
     padding-right:25px;
+    height: 600px;
 
 }
 .row{
@@ -48,9 +53,46 @@ p{
     min-width:300px;
 }
 .col-2 img{
-    padding:50px 0;
+    padding:50px 0 100px 100px;
     width:800px;
     height: auto;
+    margin-right: 900px;
+    /* position: absolute; */
+    /* z-index: 2; */
+}
+.shape-img{
+    margin-top: -400px;
+    margin-left: -150px;
+    transform: transform 0.5s;
+    /* cursor:pointer; */
+    
+}
+.shape-img:hover{
+    transform: translateX(-5%);
+}
+.shape{
+    width: 400px;
+    height:400px;
+    background-color: #f587ab;
+    /* #ff8170 */
+    border-radius: 200px 200px 200px 30px;
+    transform: transform 0.5s;
+}
+.shape:hover{
+    transform: translateX(5%);
+}
+.shape2{
+    width: 300px;
+    height:300px;
+    background-color: #fb6f5d;
+    /* #fb6f5d */
+    margin-left: 150px;
+    border-radius: 200px 200px 200px 200px;
+    /* z-index: -1; */
+    transform: transform 0.5s;
+}
+.shape2:hover{
+    transform: translateX(-15%);
 }
 .col-2 h1{
     font-size: 50px;
@@ -207,6 +249,7 @@ small{
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+    height: auto;
 }
 .footer p{
     color: #8a8a8a;

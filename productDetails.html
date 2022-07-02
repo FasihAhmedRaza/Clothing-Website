@@ -26,10 +26,10 @@
             <nav>
                 <ul id="MenuItems">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Products</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="productDetails.html">Account</a></li>
 
                 </ul>
             </nav>
@@ -39,22 +39,29 @@
 
     </div>
 
-    <!-- Single Product details -->
+    <!------- Single Product details -------->
 
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/gallery-1.jpg" width="100%">
-       
-    <div class="small-img-row">
-        <img src="images.gallery-1.jpg" width="100%">
+        
+                <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+      
+                <div class="small-img-row">
+    <div class="small-img-col">
+        <img src="images/gallery-1.jpg" class="small-img" width="100%">
+    </div>
+    <div class="small-img-col">
+        <img src="images/gallery-2.jpg" class="small-img" width="100%">
+    </div>
+    <div class="small-img-col">
+        <img src="images/gallery-3.jpg" class="small-img" width="100%">
+    </div>
+    <div class="small-img-col">
+        <img src="images/gallery-4.jpg" class="small-img" width="100%">
     </div>
 
-
-
-
-
-
+</div>
 
             </div>
             <div class="col-2">
@@ -84,7 +91,18 @@
 
 
 
-    <!------------ Featured Products ------------------>
+<!-- ------------------title ---------->
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+
+
+    <!------------ Products ------------------>
 
     <div class="small-container">
 
@@ -204,6 +222,30 @@
         }
     </script>
 
+
+
+<!--  Js for product gallery -->
+<script>
+ var ProductImg =document.getElementById("ProductImg");
+ var SmallImg =document.getElementsByClassName("small-img");
+
+ SmallImg[0].onclick =function(){
+     ProductImg.src = SmallImg[0].src;
+ }
+ SmallImg[1].onclick =function(){
+     ProductImg.src = SmallImg[1].src;
+ }
+ SmallImg[2].onclick =function(){
+     ProductImg.src = SmallImg[2].src;
+ }
+ SmallImg[3].onclick =function(){
+     ProductImg.src = SmallImg[3].src;
+ }
+
+
+
+
+</script>
 
 </body>
 
