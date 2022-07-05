@@ -11,14 +11,25 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
     cursor: pointer;
     /* position: absolute; */
+    
 }
 nav{
     flex :1;
-   
+   /* margin-top: -20px; */
     text-align: right;
+}
+.logo {
+  width: 300px;
+  height: 100px;
+  margin-top: -30px;
+  /* background-color: #000; */
+
+}
+.logo-img{
+margin-top: 20px;
 }
 nav ul{
     display: inline-block;
@@ -276,8 +287,11 @@ small{
     text-align: center;
 }
 .footer-col-2 img{
-    width: 180px;
+    width: 480px;
     margin-bottom: 20px;
+}
+.logo-p{
+    margin-top: -100px;
 }
 .footer-col-3 , .footer-col-1{
 flex-basis: 12%;
@@ -390,42 +404,3 @@ select:focus{
 }
 
 
-/* hover effect  */
-.pro-box {
-    width: 350px;
-    height: 420px;
-    background-color: rgb(255, 255, 255);
-    float: left;
-    margin: 20px 0px 0px 30px;
-    justify-content: center;
-    padding: 28px 28px;
-    margin-right: 300px;
-    margin-left: -80px;
-  }
-  .pro-box img {
-    width: inherit;
-    height: inherit;
-  }
-  .pro-box-hover {
-    width: 80%;
-    height: 70px;
-    background-color: rgb(240, 221, 221);
-    transform: translateY(-183px);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.4s;
-    margin: 22px;
-  }
-  .pro-box-hover h1 {
-    text-align: center;
-    line-height: 70px;
-  }
-  .pro-box:hover .pro-box-hover {
-    visibility: visible;
-    transform: translateY(-210px);
-    opacity: 9;
-    transition: 0.4s;
-  }
-  .pro-box-hover h1:hover {
-    color: red;
-  }

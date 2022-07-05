@@ -21,6 +21,16 @@ body{
     /* box-shadow: 0px 0px 19px 5px rgba(245, 23, 23, 0.19); */
     /* position: fixed; */
 }
+.logo {
+    width: 300px;
+    height: 100px;
+    margin-top: -30px;
+    /* background-color: #000; */
+  
+  }
+  .logo-img{
+  margin-top: 20px;
+  }
 nav{
     flex :1;
     text-align: right;
@@ -32,6 +42,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+    padding: 5px; 
 }
 a{
     text-decoration: none;
@@ -270,14 +281,18 @@ small{
 }
 .footer-col-1{
     flex-basis: 30%;
+    margin-left: 100px;
 }
 .footer-col-2{
     flex: 1;
     text-align: center;
 }
 .footer-col-2 img{
-    width: 180px;
+    width: 480px;
     margin-bottom: 20px;
+}
+.logo-p{
+    margin-top: -100px;
 }
 .footer-col-3 , .footer-col-1{
 flex-basis: 12%;
