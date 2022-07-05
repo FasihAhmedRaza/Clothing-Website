@@ -74,8 +74,10 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="productDetails.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
+                
                 <img src="images/product-2.jpg">
                 <h4>Red Printed T-shirt</h4>
                 <div class="rating">
@@ -86,6 +88,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-3.jpg">
@@ -98,6 +101,7 @@
                     <i class="fa fa-star-half-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-4.jpg">
@@ -107,9 +111,10 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
         </div>
 
@@ -125,6 +130,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-11.jpg">
@@ -137,6 +143,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-3.jpg">
@@ -149,6 +156,7 @@
                     <i class="fa fa-star-half-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-10.jpg">
@@ -161,6 +169,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
         </div>
 
@@ -176,6 +185,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-2.jpg">
@@ -188,6 +198,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-7.jpg">
@@ -200,6 +211,7 @@
                     <i class="fa fa-star-half-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
             <div class="col-4">
                 <img src="images/product-6.jpg">
@@ -212,6 +224,7 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+                <a href="products.html" class="btn">View Details &#8594;</a>
             </div>
         </div>
 
@@ -285,8 +298,20 @@
             }
         }
     </script>
-
-
+  <script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("navbar");
+        header.classList.toggle("sticky", window.scrollY );
+    })
+</script>
+<style>
+     header .stick
+      {
+        padding: 10px 100px;
+        box-shadow: 1px 1px 20px 0px;
+        background-color: black;
+    }
+</style>
 </body>
 
 </html>

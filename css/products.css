@@ -7,13 +7,19 @@
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh; 
+    /* 10vh equals to 10% */
+	width: 100%;
 }
 .navbar{
     display: flex;
     align-items: center;
+    width: 100%;
     padding: 20px;
-    cursor: pointer;
-    /* position: absolute; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 19px 5px #a1a1a1;
+    /* box-shadow: 0px 0px 19px 5px rgba(245, 23, 23, 0.19); */
+    /* position: fixed; */
 }
 nav{
     flex :1;
@@ -33,14 +39,13 @@ a{
 }
 p{
     color: #555;
+
 }
 .container{
-    max-width: 1300px;
+    max-width: auto;
     margin:auto;
-    padding-left: 25px;
-    padding-right:25px;
-    /* height: 700px; */
-
+    /* padding-left: 25px;
+    padding-right:25px; */
 }
 .row{
     display: flex;
@@ -371,3 +376,43 @@ select:focus{
     background: #ff523b;
     color: white;
 }
+
+/* hover effect  */
+.pro-box {
+    width: 350px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin: 20px 0px 0px 30px;
+    justify-content: center;
+    padding: 28px 28px;
+    margin-right: 300px;
+    margin-left: -80px;
+  }
+  .pro-box img {
+    width: inherit;
+    height: inherit;
+  }
+  .pro-box-hover {
+    width: 80%;
+    height: 70px;
+    background-color: rgb(240, 221, 221);
+    transform: translateY(-183px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    margin: 22px;
+  }
+  .pro-box-hover h1 {
+    text-align: center;
+    line-height: 70px;
+  }
+  .pro-box:hover .pro-box-hover {
+    visibility: visible;
+    transform: translateY(-210px);
+    opacity: 9;
+    transition: 0.4s;
+  }
+  .pro-box-hover h1:hover {
+    color: red;
+  }

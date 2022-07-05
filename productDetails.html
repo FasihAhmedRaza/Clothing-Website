@@ -78,7 +78,7 @@
                     <option>Small</option>
                 </select>
                 <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <a href="" onclick="showAlert()" class="btn">Add To Cart</a>
                 <h3>Product Details <i class="fa fa-indent"></i></h3>
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -242,7 +242,10 @@
      ProductImg.src = SmallImg[3].src;
  }
 
-
+ function showAlert() {
+    alert ("Product has been added to your cart ");
+  }
+ 
 
 
 </script>
