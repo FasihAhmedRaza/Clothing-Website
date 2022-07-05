@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/productDetails.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocAA</title>
+    <title>Checkme .</title>
 </head>
 
 <body>
@@ -44,29 +44,18 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-        
-                <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
-      
-                <div class="small-img-row">
-    <div class="small-img-col">
-        <img src="images/gallery-1.jpg" class="small-img" width="100%">
-    </div>
-    <div class="small-img-col">
-        <img src="images/gallery-2.jpg" class="small-img" width="100%">
-    </div>
-    <div class="small-img-col">
-        <img src="images/gallery-3.jpg" class="small-img" width="100%">
-    </div>
-    <div class="small-img-col">
-        <img src="images/gallery-4.jpg" class="small-img" width="100%">
-    </div>
+                <!-- <img src="images/p8.jpg"> -->
+                <img src="images/p8.jpg" width="100%" height="100%" id="ProductImg">
 
-</div>
+                <div class="small-img-row">
+
+
+                </div>
 
             </div>
             <div class="col-2">
                 <p>Home / T-Shirt</p>
-                <h1>Red Printed T-Shirt by HRX </h1>
+                <h1>Black Formal shirt by HRX </h1>
                 <h4>$50.00</h4>
                 <br><br>
                 <select>
@@ -81,24 +70,24 @@
                 <a href="" onclick="showAlert()" class="btn">Add To Cart</a>
                 <h3>Product Details <i class="fa fa-indent"></i></h3>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit ullam, illo cum optio perferendis impedit,
                     vitae quidem et voluptas, sit eos debitis voluptates est
-                     beatae obcaecati nulla vel voluptatibus voluptatum!</p>
+                    beatae obcaecati nulla vel voluptatibus voluptatum!</p>
             </div>
         </div>
     </div>
 
 
 
-<!-- ------------------title ---------->
+    <!-- ------------------title ---------->
 
-<div class="small-container">
-    <div class="row row-2">
-        <h2>Related Products</h2>
-        <p>View More</p>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
     </div>
-</div>
 
 
 
@@ -109,8 +98,8 @@
 
         <div class="row">
             <div class="col-4">
-                <img src="images/product-1.jpg">
-                <h4>Red Printed T-shirt</h4>
+                <img src="images/p4.jpg">
+                <h4>Formal Red shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -118,11 +107,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>$56.00</p>
+
             </div>
             <div class="col-4">
-                <img src="images/product-9.jpg">
-                <h4>Red Printed T-shirt</h4>
+                <img src="images/product3.jpg" height="314px">
+                <h4>White Casual shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -130,11 +120,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>$45.00</p>
+
             </div>
             <div class="col-4">
-                <img src="images/product-7.jpg">
-                <h4>Red Printed T-shirt</h4>
+                <img src="images/p1.jpg">
+                <h4>Black Jacket</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -142,11 +133,12 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>$110.00</p>
+
             </div>
             <div class="col-4">
                 <img src="images/product-6.jpg">
-                <h4>Red Printed T-shirt</h4>
+                <h4>Blue T-shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -155,12 +147,11 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$50.00</p>
+
             </div>
         </div>
+
     </div>
-
-
-
 
     <!------------------------ footer -------------------------->
 
@@ -224,31 +215,31 @@
 
 
 
-<!--  Js for product gallery -->
-<script>
- var ProductImg =document.getElementById("ProductImg");
- var SmallImg =document.getElementsByClassName("small-img");
+    <!--  Js for product gallery -->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
 
- SmallImg[0].onclick =function(){
-     ProductImg.src = SmallImg[0].src;
- }
- SmallImg[1].onclick =function(){
-     ProductImg.src = SmallImg[1].src;
- }
- SmallImg[2].onclick =function(){
-     ProductImg.src = SmallImg[2].src;
- }
- SmallImg[3].onclick =function(){
-     ProductImg.src = SmallImg[3].src;
- }
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
 
- function showAlert() {
-    alert ("Product has been added to your cart ");
-  }
- 
+        function showAlert() {
+            alert("Product has been added to your cart ");
+        }
 
 
-</script>
+
+    </script>
 
 </body>
 
